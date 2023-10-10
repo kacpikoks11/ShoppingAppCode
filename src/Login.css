@@ -1,0 +1,10 @@
+.LoginForm{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.Inputs{
+    display: grid;
+    grid-template-columns: 1fr;
+}
