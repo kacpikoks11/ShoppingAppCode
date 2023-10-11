@@ -55,10 +55,11 @@ function InputsForm(){
       
       <input type="text" ref={login}></input>
       <input type="text" ref={password}></input>
-      <button onClick={Login}>Login</button>
+      <button>Login</button>
     </div>
   )
 }
+//onClick={Login}
 
 function LoginForm(){
 //   axios.request(configIsLogged)
