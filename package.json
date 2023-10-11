@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kacpikoks11.github.io/shoppingApp",
+  "homepage": "https://kacpikoks11.github.io/ShoppingAppCode/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
