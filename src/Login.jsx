@@ -6,50 +6,50 @@ import './Login.css'
 
 
 
-let configIsLogged = {
-  method: 'get',
-  maxBodyLength: Infinity,
-  url: 'http://localhost:5000/Auth/IsLogged',
-  withCredentials: true
-};
+// let configIsLogged = {
+//   method: 'get',
+//   maxBodyLength: Infinity,
+//   url: 'http://localhost:5000/Auth/IsLogged',
+//   withCredentials: true
+// };
 
 
 function InputsForm(){
   
   const login = useRef();
   const password = useRef();
-  function Login(evnt){
-    let log = login.current.value;
-    let pass = password.current.value;
-    console.log(log + pass);
-    let data = JSON.stringify(
-      {
-      "email": log,
-      "password": pass
-      });
+  // function Login(evnt){
+  //   let log = login.current.value;
+  //   let pass = password.current.value;
+  //   console.log(log + pass);
+  //   let data = JSON.stringify(
+  //     {
+  //     "email": log,
+  //     "password": pass
+  //     });
 
-    let configLogin = {
-      method: 'post',
-      maxBodyLength: Infinity,
-      url: 'http://localhost:5000/Auth/Login',
-      headers: { 
-        'Content-Type': 'application/json'
-      },
-      data : data,
-      withCredentials: true
-    };
+  //   let configLogin = {
+  //     method: 'post',
+  //     maxBodyLength: Infinity,
+  //     url: 'http://localhost:5000/Auth/Login',
+  //     headers: { 
+  //       'Content-Type': 'application/json'
+  //     },
+  //     data : data,
+  //     withCredentials: true
+  //   };
 
-    axios.request(configLogin)
-    .then((response) => {
-      console.log(JSON.stringify(response.data));
-    })
-    .catch((error) => {
-      console.log(error);
-      return;
-    });
-    login.current.value = "";
-    password.current.value = "";
-  }
+  //   axios.request(configLogin)
+  //   .then((response) => {
+  //     console.log(JSON.stringify(response.data));
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //     return;
+  //   });
+  //   login.current.value = "";
+  //   password.current.value = "";
+  // }
   return(
     <div class="Inputs">
       
